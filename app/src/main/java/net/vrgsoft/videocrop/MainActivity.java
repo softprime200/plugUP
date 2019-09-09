@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         String inputPath = "/storage/emulated/0/VidMate/download/1111.mp4";
         String outputPath = "/storage/emulated/0/YD.mp4";
+        Log.e("TAG", "test");
 
         startActivityForResult(VideoCropActivity.createIntent(this, inputPath, outputPath), CROP_REQUEST);
     }
